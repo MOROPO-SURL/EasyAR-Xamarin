@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>EasyARX</id>
+    <version>$version$</version>
+    <authors>Joe Jensen</authors>
+    <description>Simple Wrapper around EasyAR for use in Xamarin.</description>
+    <projectUrl>https://github.com/joejensen/EasyAR-Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+
+    <!-- Android -->
+    <file src="EasyARX.Android/bin/Release/EasyARX.dll" target="lib/MonoAndroid10/EasyARX.dll" />
+    <file src="EasyARX.Android/bin/Release/EasyARX.pdb" target="lib/MonoAndroid10/EasyARX.pdb" />
+
+    <!-- iOS -->
+    <file src="EasyARX.iOS/bin/Release/EasyARX.dll" target="lib/Xamarin.iOS10/EasyARX.dll" />
+    <file src="EasyARX.iOS/bin/Release/EasyARX.pdb" target="lib/Xamarin.iOS10/EasyARX.pdb" />
+
+    <!-- netstandard2.0 -->
+    <file src="EasyARX.Standard/bin/Release/netstandard2.0/EasyARX.dll" target="lib/netstandard2.0/EasyARX.dll" />
+    <file src="EasyARX.Standard/bin/Release/netstandard2.0/EasyARX.pdb" target="lib/netstandard2.0/EasyARX.pdb" />
+
+  </files>
+</package>
