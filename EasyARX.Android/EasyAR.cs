@@ -16,6 +16,7 @@ namespace EasyAR
         {
             System.IntPtr easyArClass = JNIEnv.FindClass("cn/easyar/Engine");
             System.IntPtr initializeMethod = JNIEnv.GetStaticMethodID(easyArClass, "initialize", "(Landroid/app/Activity;Ljava/lang/String;)Z");
+            
             return JNIEnv.CallStaticBooleanMethod(easyArClass, initializeMethod, new JValue[] { new JValue(activity), new JValue(new Java.Lang.String(key)) });
         }
     }
